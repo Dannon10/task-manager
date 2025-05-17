@@ -193,14 +193,6 @@ input[type=checkbox] {
         font-size: 1.65rem;
     }
 
-    .due-date-label {
-        display: none;
-    }
-
-    .reminder-inputs .reminder-label{
-        display: none;
-    }
-
     .btn-add-todo {
         font-size: 1.85rem;
         height: 4rem;

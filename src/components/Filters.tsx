@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useUser } from '../services/user';
+import { useUser } from '../types/user';
 import useLocalStorage from '../hooks/useLocalStorage';
 
 type FilterValues = {

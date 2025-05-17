@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { useUser } from "../services/user";
+import { useUser } from "../types/user";
 import { ClipboardTaskRegular, PersonRegular, SignOut20Regular } from '@fluentui/react-icons';
 import './navsection.css';
 import { Link } from 'react-router-dom';

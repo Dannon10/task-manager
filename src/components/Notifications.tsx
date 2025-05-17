@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Todo } from '../services/todo';
+import { Todo } from '../types/todo';
 
 interface NotificationProps {
   todos: Todo[];

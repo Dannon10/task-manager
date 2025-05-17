@@ -9,7 +9,7 @@ import {
   updateDoc,
   DocumentReference
 } from "firebase/firestore";
-import { Todo } from "../services/todo";
+import { Todo } from "../types/todo";
 
 export const listenToTodos = (
   userId: string,

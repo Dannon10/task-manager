@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { loginUser, registerUser, logoutUser } from "../types/authService";
-import { useUser } from "../services/user";
+import { loginUser, registerUser, logoutUser } from "../services/authService";
+import { useUser } from "../types/user";
 import { useNavigate } from "react-router-dom";
 import { ClipLoader } from 'react-spinners';
 

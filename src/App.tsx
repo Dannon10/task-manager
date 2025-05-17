@@ -1,7 +1,7 @@
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
-import { logoutUser } from './types/authService';
+import { logoutUser } from './services/authService';
 import Error404 from './components/Error404';
 
 

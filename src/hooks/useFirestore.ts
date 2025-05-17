@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { Todo } from "../services/todo";
-import { listenToTodos, saveTodos, markAsNotified } from "../types/todoService";
+import { Todo } from "../types/todo";
+import { listenToTodos, saveTodos, markAsNotified } from "../services/todoService";
 
 export function useFirestoreSync(
   userId: string | null,

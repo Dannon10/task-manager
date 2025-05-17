@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Filters from './Filters';
-import { useUser } from "../services/user";
+import { useUser } from "../types/user";
 import { FilterRegular } from '@fluentui/react-icons';
 import './taskpanel.css';
 

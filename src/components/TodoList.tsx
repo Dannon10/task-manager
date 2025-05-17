@@ -1,4 +1,4 @@
-import { Todo } from '../services/todo';
+import { Todo } from '../types/todo';
 import { Droppable, Draggable } from 'react-beautiful-dnd';
 import TodoItem from './TodoItem';
 import './todolist.css'

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Todo } from '../services/todo';
+import { Todo } from '../types/todo';
 import {
   Delete20Regular,
   Edit20Regular,
