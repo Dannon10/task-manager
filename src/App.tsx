@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import { logoutUser } from './types/authService';
+import Error404 from './components/Error404';
 
-function App() {
+
+export default function App() {
+const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    await logoutUser();
+    navigate("/");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Routes>
+      <Route 
+      path='/' 
+      element={<Login/>}
+      />
+      <Route 
+      path='/Dashboard' 
+      element={<Dashboard 
+      handleLogout={handleLogout}/>} 
+      />
+      <Route 
+      path="*" 
+      element={<Error404 />} 
+      />
+      </Routes>
     </div>
-  );
+  )
 }
-
-export default App;

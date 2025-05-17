@@ -1,0 +1,236 @@
+.filter .filter-icon {
+    font-size: 4rem;
+    color: rgb(0, 85, 128);
+}
+
+.task-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-msg h4 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 6rem;
+}
+
+.panel h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(0, 85, 128);
+}
+
+.filter {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all ease-in-out .1s ;
+}
+
+.filter-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(0, 85, 128);
+    width: 100%;
+}
+
+.filter-btn:hover {
+    transform: scale(1.05);
+}
+
+.filter-dropdown-wrapper {
+    opacity: 0;
+    transform: translateY(-20px) scaleY(0);
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+        visibility 0.5s ease;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 22rem;
+    z-index: 1000;
+    transform-origin: top center;
+}
+
+.filter-dropdown-wrapper.show {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.filter-dropdown-wrapper.hide {
+    opacity: 0;
+    transform: translateY(-20px) scaleY(0.95);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.filter-dropdown {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all ease-in-out 6s;
+}
+
+.filter-menu-list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.filter-buttons {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.filter-selects {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filter-select {
+    padding: .8rem 1.2rem;
+    width: 100%;
+    border: none;
+    font-size: 1.4rem;
+    flex-direction: column;
+}
+
+.filter-menu-list select {
+    background-color: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+    appearance: none;
+}
+
+select:focus {
+    border-color: #0078d4;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+}
+
+option {
+    padding: .8rem;
+    background-color: white;
+    font-size: 1.4rem;
+}
+
+@media(min-width: 768px) {
+    
+    .filter .filter-icon {
+        font-size: 5.5rem;
+    }
+
+    .welcome-msg h4 {
+        font-size: 4rem;
+    }
+
+    .panel h4 {
+        font-size: 3.5rem;
+    }
+
+    .filter-dropdown-wrapper {
+        width: 25rem;
+    }
+
+    .filter-buttons button {
+        font-size: 1.75rem;
+    }
+
+    .filter-menu-list select {
+        font-size: 1.75rem;
+    }
+
+    option {
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .filter .filter-icon {
+        font-size: 5rem;
+    }
+
+    .welcome-msg h4 {
+        font-size: 4rem;
+    }
+
+    .panel h4 {
+        font-size: 2.85rem;
+    }
+
+    .filter-dropdown-wrapper {
+        width: 25rem;
+    }
+
+    .filter-buttons button,
+    .filter-menu-list select {
+        font-size: 1.85rem;
+    }
+
+    option {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media(min-width: 1280px) {
+    .filter .filter-icon {
+        font-size: 4.5rem;
+    }
+
+    .welcome-msg h4 {
+        font-size: 3rem;
+    }
+
+    .panel h4 {
+        font-size: 3.5rem;
+    }
+
+    .filter-buttons button,
+    .filter-menu-list select {
+        font-size: 2rem;
+    }
+
+    .filter-dropdown-wrapper{
+        width: 30rem;
+    }
+
+    option {
+        font-size: 1.2rem;
+    }
+    
+}

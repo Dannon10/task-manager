@@ -1,0 +1,148 @@
+
+.login-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+}
+
+.login-page-content {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgb(0, 85, 128);
+}
+
+.login-header {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.sign-in-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 1rem;
+}
+
+.sign-in-info p {
+    font-size: 1.45rem;
+    color: #5f5f5f;
+}
+
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.username-input,
+.password-input,
+.email-input {
+    font-size: 1.5rem;
+    height: 6rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: rgb(0, 85, 128);
+}
+
+.login-welcome button {
+    width: 8rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+}
+
+.btn-login, .btn-login{
+    transition: all ease-in-out .5s;
+}
+
+.btn-register:hover, .btn-login:hover{
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 85, 128);
+    color: rgb(0, 85, 128);
+    transform: scale(1.01);
+}
+
+@media(min-width: 768px) {
+    .login-page-container {
+        height: auto;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .login-header {
+        font-size: 4rem;
+    }
+
+    .username-input,
+    .password-input,
+    .email-input {
+        font-size: 1.75rem;
+        height: 5.5rem;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    
+    .login-page-container {
+        height: 100dvh;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .login-header {
+        font-size: 3rem;
+    }
+
+    .username-input,
+    .password-input,
+    .email-input {
+        font-size: 1.85rem;
+        height: 5rem;
+    }
+}
+
+@media(min-width: 1248px) {
+    .title {
+        font-size: 5rem;
+    }
+
+    .login-header {
+        font-size: 3.3rem;
+    }
+
+    .username-input,
+    .password-input,
+    .email-input {
+        font-size: 1.75rem;
+        height: 5rem;
+    }
+
+}
